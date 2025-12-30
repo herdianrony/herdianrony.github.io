@@ -2,6 +2,7 @@ backend:
   name: github
   repo: herdianrony/herdianrony.github.io
   branch: master
+  client_id: Ov23li2ey25zBoy5hkPi
 
 media_folder: 'src/assets/images'
 public_folder: '/assets/images'
