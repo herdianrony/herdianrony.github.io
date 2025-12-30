@@ -35,4 +35,3 @@ jobs:
           commit_message: 'Deploy Eleventy site to GitHub Pages'
           force_orphan: true
           keep_files: false
-          clean: true
