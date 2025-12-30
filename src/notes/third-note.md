@@ -1,7 +1,7 @@
 ---
 title: Third Note
 date: 2023-01-03
-layout: base
+layout: layouts/base
 tags: [tutorial, web]
 ---
 

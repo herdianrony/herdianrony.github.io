@@ -1,7 +1,7 @@
 ---
 title: Third Project
 date: 2023-01-03
-layout: base
+layout: layouts/base
 description: A mobile app project
 tags: [mobile, app]
 github: https://github.com/example/third-project

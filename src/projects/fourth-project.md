@@ -1,7 +1,7 @@
 ---
 title: Fourth Project
 date: 2023-01-04
-layout: base
+layout: layouts/base
 description: A UI design project
 tags: [design, ui]
 demo: https://fourth-project-demo.com

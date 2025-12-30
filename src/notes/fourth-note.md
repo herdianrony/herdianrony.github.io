@@ -1,7 +1,7 @@
 ---
 title: Fourth Note
 date: 2023-01-04
-layout: base
+layout: layouts/base
 tags: [javascript, code]
 ---
 
