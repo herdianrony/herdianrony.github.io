@@ -1,4 +1,7 @@
 module.exports = function (eleventyConfig) {
+    eleventyConfig.addPassthroughCopy("admin");
+    eleventyConfig.addPassthroughCopy("src/assets/images");
+
     eleventyConfig.addCollection("notes", function (collectionApi) {
         return collectionApi.getFilteredByGlob("src/notes/*.md").filter(item => !item.inputPath.includes('index.md'));
     });
@@ -22,7 +25,6 @@ module.exports = function (eleventyConfig) {
         dir: {
             input: "src",
             output: "_site"
-        },
-        pathPrefix: "/herdianrony/"
+        }
     };
 };

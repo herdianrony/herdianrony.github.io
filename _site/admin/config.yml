@@ -1,0 +1,57 @@
+backend:
+  name: github
+  repo: herdianrony/herdianrony
+  branch: master
+
+media_folder: 'src/assets/images'
+public_folder: '/herdianrony/assets/images'
+
+collections:
+  - name: 'notes'
+    label: 'Notes'
+    folder: 'src/notes'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Tags', name: 'tags', widget: 'list', default: [] }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'projects'
+    label: 'Projects'
+    folder: 'src/projects'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Tags', name: 'tags', widget: 'list', default: [] }
+      - { label: 'GitHub', name: 'github', widget: 'string', required: false }
+      - { label: 'Demo', name: 'demo', widget: 'string', required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - file: 'src/index.md'
+        label: 'Home'
+        name: 'home'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+
+      - file: 'src/about.md'
+        label: 'About'
+        name: 'about'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+
+      - file: 'src/contact.md'
+        label: 'Contact'
+        name: 'contact'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
