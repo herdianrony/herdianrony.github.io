@@ -1,10 +1,10 @@
 backend:
   name: github
-  repo: herdianrony/herdianrony
+  repo: herdianrony/herdianrony.github.io
   branch: master
 
 media_folder: 'src/assets/images'
-public_folder: '/herdianrony/assets/images'
+public_folder: '/assets/images'
 
 collections:
   - name: 'notes'
