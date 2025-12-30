@@ -1,0 +1,17 @@
+<section>
+
+    <h2>Latest Projects</h2>
+
+    <ul>
+
+        {% for project in collections.projects | reverse | slice: 0, 3 %}
+
+        <li><a href="{{ project.url }}">{{ project.data.title }}</a>: {{ project.data.description }}</li>
+
+        {% endfor %}
+
+    </ul>
+
+    <a href="/projects/">View all projects</a>
+
+</section>

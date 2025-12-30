@@ -1,0 +1,17 @@
+<section>
+
+    <h2>Latest Notes</h2>
+
+    <ul>
+
+        {% for note in collections.notes | reverse | slice: 0, 3 %}
+
+        <li><a href="{{ note.url }}">{{ note.data.title }}</a></li>
+
+        {% endfor %}
+
+    </ul>
+
+    <a href="/notes/">View all notes</a>
+
+</section>
