@@ -4,7 +4,7 @@
 
     <ul>
 
-        {% for note in collections.notes | reverse | slice: 0, 3 %}
+        {% for note in collections.notes | sort: 'data.date' | reverse | slice: 0, 3 %}
 
         <li><a href="{{ note.url }}">{{ note.data.title }}</a></li>
 
