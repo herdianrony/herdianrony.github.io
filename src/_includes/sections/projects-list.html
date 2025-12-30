@@ -4,7 +4,7 @@
 
     <ul>
 
-        {% for project in collections.projects | sort: 'data.date' | reverse | slice: 0, 3 %}
+        {% for project in collections.projects | sort: 'date' | reverse | slice: 0, 3 %}
 
         <li><a href="{{ project.url }}">{{ project.data.title }}</a>: {{ project.data.description }}</li>
 
